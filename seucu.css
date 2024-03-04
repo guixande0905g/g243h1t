@@ -4,26 +4,54 @@
     height: 100px;
     text-align: center;
 }
-.dispoitivo{
+.Mobile{
     font-size: 60px;
     color: white;
+    text-align: center;
 }
+.Tablet {
+    display: none;
+}
+.Desktop {
+    display: none;
+}
+
 
 @media (min-width: 800px) {
     .barra{
         height: 150px;
         background-color: tomato
     }
-    .dispoitivo {
+    .Mobile {
         display: none;
 
     }
+    .Tablet {
+        display: inline;
+        font-size: 70px;
+        color: red;
+        text-align: center;
+    }
+    .Desktop {
+        display: none;
+    }
+
+
+
     @media (min-width: 1228px){
         .barra {
             height: 200px;
             background-color: rgb(85, 0, 255);
+    }
+        .Tablet{
+            display: none;
+    }
+        .Desktop{
+            display: inline;
+            font-size: 70px;
+            color: red;
+    }
 
-        }
     }
     .rodape {
         text-align: center;

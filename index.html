@@ -3,38 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>sla</title>
     <link rel="stylesheet" href="seucu.css">
     <script src="sla.js"></script>
 </head>
 <body>
 
-  <header class="barra">
-   <span class="Mobile">Mobile</span>
-   <span class="Tablet">Tablet</span>
-   <span class="Desktop">Desktop</span>
+<header class="barra">
+  <span class="mobile">Mobile</span>
+  <span class="tablet">Tablet</span>
+  <span class="desktop">Guilherme 𝖊 Enzo</span>
 </header>
-</body> 
-
+<section class="conteudo"> 
+     <div class="btns">
+         <button class="botoes" id="btn1" onclick="escolher_aba(1)">Aba 1</button>
+         <button class="botoes" id="btn2" onclick="escolher_aba(2)">Aba 2</button>
+         <button class="botoes" id="btn3" onclick="escolher_aba(3)">Aba 3</button>
+         <button class="botoes" id="btn4" onclick="escolher_aba(4)">Aba 4</button>
+    </div>
+        <div class="divisoes">
+        <div class="abageral aba1" id="ab1">
+          Hora atual: <span id="h"></span>
+        </div>
+        <div class="abageral aba2" id="ab2"></div>
+         contador de: <input type="number" id="incio">
+         Até: <input type="number" id="fim"> </br>
+         <button onclick="iniciar()"> Contar </button>
+        </div>
+        <div class="abageral aba3" id="ab3"></div>
+        <div class="abageral aba4" id="ab4"></div>
   </div>
-  <section class="conteudo">
-    <div class="abas">
-         <button class="botoes" id="btn1" onclick="escolher_aba(1)">aba 01</button>
-         <button class="botoes" id="btn2" onclick="escolher_aba(2)">aba 02</button>
-         <button class="botoes" id="btn3" onclick="escolher_aba(3)">aba 03</button>
-         <button class="botoes" id="btn4" onclick="escolher_aba(4)">aba 04</button>
-       </div>
-       <div class="divisoes">
-          <div class="abas1" id="ab1"><div>
-          <div class="abas2" id="ab2"><div>
-          <div class="abas3" id="ab3"><div>
-          <div class="abas4" id="ab4"><div> 
-       </div>
-      </div>
-    </section>
-    <footer class="rodape">
-    direito reservados: Guilherme Ferreira e Enzo Pioli
-  </footer>
-  </html>
+</div>
+</section>
+<footer class="rodape">
+Direitos reservados: Guilherme Ferreira e Enzo Piolli
+</footer>
+<script>escolher_aba(1); hora_atual();</script>
 </body>
 </html>
